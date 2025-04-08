@@ -12,7 +12,7 @@ function randomCat(catType){
     document.getElementById('question').style.display = "block";
     const randomIndex = Math.floor(Math.random() * catType.length);
     if(catType[randomIndex] === 'Javanese'){
-        document.getElementById('image').innerHTML = `<img src="javanese-Cat.jpeg" width="320px" height="230px"><br>
+        document.getElementById('image').innerHTML = `<img src="Javanese-Cat.jpeg" width="320px" height="230px"><br>
         <input type="radio" name="typeCat" id="correct">
         <label type="radio" name="typeCat" value="Javanese" id="cat">Javanese Cat<br>
         <input type="radio" name="typeCat" id="wrong">
