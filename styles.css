@@ -1,0 +1,100 @@
+*{
+    margin: 0 auto;
+    padding: auto;
+    font-family: 'Times New Roman', Times, serif;
+    }
+
+    .container{
+        margin-top: 50px;
+        background-color: rgb(247, 205, 212);
+        width: 450px;
+        height: 450px;
+        text-align: center;
+        padding: 15px;
+        border: 3px dotted rgb(179, 104, 117);
+    }
+    
+    button{
+        margin-top: 3em;
+        padding: 20px 35px 20px 35px;
+        background-color: rgb(251, 213, 139);
+        border: 3px dashed rgb(242, 236, 125);
+        display: block;
+    }
+    
+    button:hover{
+        background-color:rgb(242, 206, 135);
+        cursor: pointer;
+    }
+    
+    H1,H2,H3{
+        margin-top:  10px;
+        color:rgb(73, 58, 26) ;
+    }
+    
+    p{
+        padding-top: 15px;
+        color:rgb(73, 58, 26);
+    }
+
+    .image{
+        display: block;
+    }
+
+    input, label{
+        margin-top: 10px;
+        color:rgb(73, 58, 26) ;
+        font-size: 20px;
+        }
+
+    .btn{
+        padding: 20px;
+        border: 3px dotted plum ;
+        height: 180px;
+        width: 200px;
+    }
+
+    #sub{
+        margin-top: auto;
+        width: fit-content;
+        height: fit-content;
+    }
+
+    #result{
+        color: rgb(43, 54, 43);
+        font-size: 30px;
+    }
+
+    #fact{
+        color:rgb(43, 54, 43) ;
+        font-size: 25px;
+    }
+
+    #question{
+        padding: 20px;
+        border: 3px dotted plum ;
+        height: 400px;
+        width: 400px;
+        display: none;
+       
+    }
+
+    a, href > p{
+        padding: 10px;
+        margin: 10px;
+        background-color: rgb(251, 213, 139);
+        border: 3px dashed rgb(242, 236, 125);
+        text-decoration: none;
+        color:rgb(73, 58, 26) ;
+    }
+
+    #output{
+        margin-top: 2.5em;
+        padding: 50px;
+        background-color: rgb(237, 179, 198);
+        border: 3px dotted rgb(179, 104, 117);
+    }
+
+    img{
+        border-radius: 10px;
+    }
