@@ -1,6 +1,6 @@
 // Attach event listener to the button once the page is loaded
 document.getElementById('catbtn').addEventListener('click', displayCat);
-  const catType = ['Javanese',`Norwegian forest`,'Calico', ];
+  const catType = ['Javanese','Norwegian forest','Calico', 'Ragdoll', 'Persian', 'Munchkin', 'Sphynx', 'Russian Blue', ];
 function displayCat() { 
   randomCat(catType);
   document.getElementById('catbtn').style.display = "none";   
@@ -39,9 +39,69 @@ function randomCat(catType){
         <input type="radio" name="typeCat" id="correct">
         <label type="radio" name="typeCat" value="Norwegian forest" id="cat">Norwegian Forest Cat<br>
         <input type="radio" name="typeCat" id="wrong2">
-        <label type="radio" name="typeCat" value="Ragdoll" id="cat">Ragdoll cat<br>
+        <label type="radio" name="typeCat" value="Birman" id="cat">Birman Cat<br>
         <button onclick="handleSubmit()" id="sub">Submit</button>`
-        }
+        }else if(catType[randomIndex] === 'Ragdoll'){
+            document.getElementById('image').innerHTML =
+        `<img src="Ragdoll.jpg" width="320px" height="230px"><br>
+          <input type="radio" name="typeCat" id="wrong">
+          <label type="radio" name="typeCat" value="Maine coon" id="cat">Maine Coon Cat<br>
+          <input type="radio" name="typeCat" id="wrong2">
+          <label type="radio" name="typeCat" value="Munchkin" id="cat">Munchkin Cat<br>
+          <input type="radio" name="typeCat" id="correct">
+          <label type="radio" name="typeCat" value="Ragdoll" id="cat">Ragdoll Cat<br>
+          <button onclick="handleSubmit()" id="sub">Submit</button>`
+          }else if(catType[randomIndex] === 'Persian'){
+            document.getElementById('image').innerHTML =
+        `<img src="Ragdoll.jpg" width="320px" height="230px"><br>
+          <input type="radio" name="typeCat" id="correct">
+          <label type="radio" name="typeCat" value="Persian" id="cat">Persian Cat<br>
+          <input type="radio" name="typeCat" id="wrong2">
+          <label type="radio" name="typeCat" value="Munchkin" id="cat">Munchkin Cat<br>
+          <input type="radio" name="typeCat" id="wrong">
+          <label type="radio" name="typeCat" value="Siamnese" id="cat">Siamnese Cat<br>
+          <button onclick="handleSubmit()" id="sub">Submit</button>`
+          }else if(catType[randomIndex] === 'Munchkin'){
+            document.getElementById('image').innerHTML =
+        `<img src="Munchkin.jpg" width="320px" height="230px"><br>
+          <input type="radio" name="typeCat" id="wrong2">
+          <label type="radio" name="typeCat" value="Persian" id="cat">Persian Cat<br>
+          <input type="radio" name="typeCat" id="correct">
+          <label type="radio" name="typeCat" value="Munchkin" id="cat">Munchkin Cat<br>
+          <input type="radio" name="typeCat" id="wrong">
+          <label type="radio" name="typeCat" value="Ragdoll" id="cat">Siamnese Cat<br>
+          <button onclick="handleSubmit()" id="sub">Submit</button>`
+          }else if(catType[randomIndex] === 'Sphynx'){
+            document.getElementById('image').innerHTML =
+        `<img src="Sphynx_About_Tetsu.jpg" width="320px" height="230px"><br>
+          <input type="radio" name="typeCat" id="wrong2">
+          <label type="radio" name="typeCat" value="Javanese" id="cat">Javanese Cat<br>
+          <input type="radio" name="typeCat" id="wrong">
+          <label type="radio" name="typeCat" value="Ocicat" id="cat">Ocicat<br>
+          <input type="radio" name="typeCat" id="correct">
+          <label type="radio" name="typeCat" value="sphnx" id="cat">Sphynx Cat<br>
+          <button onclick="handleSubmit()" id="sub">Submit</button>`
+          }else if(catType[randomIndex] === 'Russian Blue'){
+            document.getElementById('image').innerHTML =
+        `<img src="russian-blue-cats.jpg" width="320px" height="230px"><br>
+          <input type="radio" name="typeCat" id="wrong2">
+          <label type="radio" name="typeCat" value="Devon Rex" id="cat">Devon Rex Cat<br>
+          <input type="radio" name="typeCat" id="wrong">
+          <label type="radio" name="typeCat" value="British Shorthair" id="cat">British Shorthair Cat<br>
+          <input type="radio" name="typeCat" id="correct">
+          <label type="radio" name="typeCat" value="Russian Blue" id="cat">Russian Blue Cat<br>
+          <button onclick="handleSubmit()" id="sub">Submit</button>`
+          }else if(catType[randomIndex] === 'Abyssinian'){
+            document.getElementById('image').innerHTML =
+        `<img src="Abyssinian.jpg" width="320px" height="230px"><br>
+          <input type="radio" name="typeCat" id="correct">
+          <label type="radio" name="typeCat" value="Abyssinian" id="cat">Abyssinian Cat<br>
+          <input type="radio" name="typeCat" id="wrong">
+          <label type="radio" name="typeCat" value="Sphynx" id="cat">Sphynx Cat<br>
+          <input type="radio" name="typeCat" id="wrong2">
+          <label type="radio" name="typeCat" value="Persian" id="cat">Persian Cat<br>
+          <button onclick="handleSubmit()" id="sub">Submit</button>`
+          }
 }
 
 function handleSubmit(){
@@ -62,4 +122,3 @@ function handleSubmit(){
   <p style="color:#f8eFae;">*You'll get a new cat*</p></div>`;
 } 
 }
-
