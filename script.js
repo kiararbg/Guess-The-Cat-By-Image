@@ -103,7 +103,7 @@ function randomCat(catType){
           <button onclick="handleSubmit()" id="sub">Submit</button>`
           }else if(catType[randomIndex] = 'Scottish Fold'){
     document.getElementById('image').innerHTML =
-      `<img src="scottishFold.format-jpeg" width="320px" height="230px"><br>
+      `<img src="scottishFold.format-jpeg.jpg" width="320px" height="230px"><br>
         <input type="radio" name="typeCat" id="wrong">
         <label type="radio" name="typeCat" value="Sphynx" id="cat">Sphynx Cat<br>
         <input type="radio" name="typeCat" id="wrong2">
