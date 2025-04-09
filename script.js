@@ -1,6 +1,6 @@
 // Attach event listener to the button once the page is loaded
 document.getElementById('catbtn').addEventListener('click', displayCat);
-  const catType = ['Javanese','Norwegian forest','Calico', 'Ragdoll', 'Persian', 'Munchkin', 'Sphynx', 'Russian Blue', 'Abyssinian', 'Scottish Fold', 'Balinese', //'Turkish Van', 'Ociocat', 'Snowshoe', 'Somali', 'Burmilla' ];
+  const catType = ['Javanese','Norwegian forest','Calico', 'Ragdoll', 'Persian', 'Munchkin', 'Sphynx', 'Russian Blue', 'Abyssinian', 'Scottish Fold', 'Balinese' ];
 function displayCat() { 
   randomCat(catType);
   document.getElementById('catbtn').style.display = "none";   
