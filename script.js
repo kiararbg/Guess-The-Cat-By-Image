@@ -1,6 +1,6 @@
 // Attach event listener to the button once the page is loaded
 document.getElementById('catbtn').addEventListener('click', displayCat);
-  const catType = ['Javanese','Norwegian forest','Calico', 'Ragdoll', 'Persian', 'Munchkin', 'Sphynx', 'Russian Blue', 'Abyssinian' ];
+  const catType = ['Javanese','Norwegian forest','Calico', 'Ragdoll', 'Persian', 'Munchkin', 'Sphynx', 'Russian Blue', 'Abyssinian', 'Scottish Fold' ];
 function displayCat() { 
   randomCat(catType);
   document.getElementById('catbtn').style.display = "none";   
@@ -101,7 +101,17 @@ function randomCat(catType){
           <input type="radio" name="typeCat" id="wrong2">
           <label type="radio" name="typeCat" value="Persian" id="cat">Persian Cat<br>
           <button onclick="handleSubmit()" id="sub">Submit</button>`
-          }
+          }else if(catType[randomIndex] = 'Scottish Fold'){
+    document.getElementById('image').innerHTML =
+      `<img src="scottishFold.format-jpeg" width="320px" height="230px"><br>
+        <input type="radio" name="typeCat" id="wrong">
+        <label type="radio" name="typeCat" value="Sphynx" id="cat">Sphynx Cat<br>
+        <input type="radio" name="typeCat" id="wrong2">
+        <label type="radio" name="typeCat" value="Burmilla" id="cat">Burmilla Cat<br>
+        <input type="radio" name="typeCat" id="correct">
+        <label type="radio" name="typeCat" value="Scottish Fold" id="cat">Scottish fold cat<br>
+        <button onclick="handleSubmit()" id="sub">Submit</button>`
+}
 }
 
 function handleSubmit(){
